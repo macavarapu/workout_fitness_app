@@ -288,11 +288,21 @@ class _MenuViewState extends State<MenuView> {
                       case 2:
    
                       Navigator.pushNamed(context, "/weightView");
+                       break;
+                      case 6:
+                      Navigator.pushNamed(context, "/scheduleview");
+                      break;
+                      case 8:
+                      Navigator.pushNamed(context, "/exerciseView");
+                      break;
+                      case 5:
+                        Navigator.pushNamed(context, "/mealPlanview");
                       break;
                       case  3:
                       Scaffold.of(context).openDrawer();
                       break;
                       default:
+                      
                       
 
                      

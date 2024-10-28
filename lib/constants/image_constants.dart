@@ -38,6 +38,10 @@ class ImageConstants {
         static const String w_1="assets/images/w_1.png";
         static const String w_2="assets/images/w_2.png";
         static const String w_3="assets/images/w_3.png";
+        static const String f1="assets/images/f1.png";
+        static const String f2="assets/images/f2.png";
+        static const String f3="assets/images/f3.png";
+        static const String f4="assets/images/f4.png";
 
 }
 

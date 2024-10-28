@@ -59,6 +59,10 @@ class StringConstants {
         static const String fitness="Fitness";
         static const String strength="Strength";
         static const String checkyourprocess="Check your process";
+        static const String breafast="Breafast";
+        static const String vegetableSandwich="vegetable, Sandwich";
+        static const String snack="Snack";
+        static const String boatnutbutte="Boat, nut, butte";
 
 
 }

@@ -16,4 +16,9 @@ class RouteList {
    static const String bottomNavigationBar="/bottomNavigationBar";
    static const String yogaview="/yogaview";
    static const String weightView="/weightView";
+   static const String scheduleview="/scheduleview";
+   static const String exerciseView="/exerciseView";
+   static const String exerciseview2="/exerciseview2";
+   static const String mealPlanview="/mealPlanview";
+   static const String mealPlanview2="/mealPlanview2";
 }

@@ -1,14 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:workout_fitness_app/common_widgets/bottom_navagationbar.dart';
 import 'package:workout_fitness_app/constants/routs_constants.dart';
+import 'package:workout_fitness_app/view/exercise_view/exercise_view.dart';
+import 'package:workout_fitness_app/view/exercise_view/exercise_view_2.dart';
 import 'package:workout_fitness_app/view/home_view/home_view.dart';
 import 'package:workout_fitness_app/view/login_view/login_view.dart';
 import 'package:workout_fitness_app/view/login_view/on_boarding_view.dart';
 import 'package:workout_fitness_app/view/login_view/step1_view.dart';
 import 'package:workout_fitness_app/view/login_view/step2_view.dart';
 import 'package:workout_fitness_app/view/login_view/step3_view.dart';
+import 'package:workout_fitness_app/view/meal_plan_view/meal_plan_view.dart';
+import 'package:workout_fitness_app/view/meal_plan_view/meal_plan_view_2.dart';
 import 'package:workout_fitness_app/view/menu_view/menu_view.dart';
 import 'package:workout_fitness_app/view/menu_view/yoga_view.dart';
+import 'package:workout_fitness_app/view/schedule_view/schedule_view.dart';
 import 'package:workout_fitness_app/view/weight/weight_view.dart';
 import 'package:workout_fitness_app/view/workout_view/workout_detail_view.dart';
 import 'package:workout_fitness_app/view/workout_view/workout_view.dart';
@@ -30,6 +35,11 @@ class Routes {
           RouteList.bottomNavigationBar:(context)=>BottomNavagationbarview(),
           RouteList.yogaview:(context)=>YogaView(),
           RouteList.weightView:(context)=>WeightView(),
+          RouteList.scheduleview:(context)=>ScheduleView(),
+          RouteList.exerciseView:(context)=>ExerciseView(),
+          RouteList.exerciseview2:(context)=>ExerciseView2(),
+          RouteList.mealPlanview:(context)=>MealPlanView(),
+          RouteList.mealPlanview2:(context)=>MealPlanView2(),
     };
   }
 }
