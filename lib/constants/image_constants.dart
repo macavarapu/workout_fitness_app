@@ -42,6 +42,15 @@ class ImageConstants {
         static const String f2="assets/images/f2.png";
         static const String f3="assets/images/f3.png";
         static const String f4="assets/images/f4.png";
+        static const String settings="assets/images/r_setting.png";
+        static const String unlock="assets/images/r_lock.png";
+        static const String r_pause="assets/images/r_pause.png";
+        static const String r_distance="assets/images/r_distance.png";
+        static const String dashboard_half="assets/images/dashboard-half.png";
+        static const String time_wall_clock="assets/images/time-wall-clock.png";
+        static const String r_heartbeat="assets/images/r_heartbeat.png";
+        static const String group="assets/images/Group 1309.png";
+        static const String next="assets/images/next.png";
 
 }
 

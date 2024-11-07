@@ -13,7 +13,10 @@ import 'package:workout_fitness_app/view/meal_plan_view/meal_plan_view.dart';
 import 'package:workout_fitness_app/view/meal_plan_view/meal_plan_view_2.dart';
 import 'package:workout_fitness_app/view/menu_view/menu_view.dart';
 import 'package:workout_fitness_app/view/menu_view/yoga_view.dart';
+import 'package:workout_fitness_app/view/running_view/running_view.dart';
 import 'package:workout_fitness_app/view/schedule_view/schedule_view.dart';
+import 'package:workout_fitness_app/view/tips_view/tips_detail_view.dart';
+import 'package:workout_fitness_app/view/tips_view/tips_view.dart';
 import 'package:workout_fitness_app/view/weight/weight_view.dart';
 import 'package:workout_fitness_app/view/workout_view/workout_detail_view.dart';
 import 'package:workout_fitness_app/view/workout_view/workout_view.dart';
@@ -40,6 +43,9 @@ class Routes {
           RouteList.exerciseview2:(context)=>ExerciseView2(),
           RouteList.mealPlanview:(context)=>MealPlanView(),
           RouteList.mealPlanview2:(context)=>MealPlanView2(),
+          RouteList.runningview:(context)=>RunningView(),
+          RouteList.tipsview:(context)=>TipsView(),
+          //RouteList.tipsDetailView:(context)=>TipsDetailView(tObj: tObj),
     };
   }
 }

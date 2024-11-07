@@ -21,4 +21,7 @@ class RouteList {
    static const String exerciseview2="/exerciseview2";
    static const String mealPlanview="/mealPlanview";
    static const String mealPlanview2="/mealPlanview2";
+   static const String runningview="/runningview";
+   static const String tipsview="/tipsview";
+   static const String tipsDetailView="/tipsDetailView";
 }

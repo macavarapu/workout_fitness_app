@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:workout_fitness_app/common_widgets/tapbar_widget.dart';
 import 'package:workout_fitness_app/components/round_botton.dart';
 import 'package:workout_fitness_app/constants/app_color_constants.dart';
+import 'package:workout_fitness_app/controller/meal_plan_2_controller.dart';
+import 'package:workout_fitness_app/controller/meal_plan_view_controller.dart';
 
 
 class MealPlanView extends StatefulWidget {
@@ -13,33 +16,8 @@ class MealPlanView extends StatefulWidget {
 
 class _MealPlanViewState extends State<MealPlanView> {
   int isActiveTab = 0;
+final  MealPlanController   mealPlanController=Get.put(MealPlanController());
 
-  List planArr = [
-    {
-      "name": "Breafast",
-      "image": "assets/images/f1.png",
-      "title": "Meal Plan",
-      "subtitle": "Personalized workouts will help\nyou gain strength"
-    },
-    {
-      "name": "Snack",
-      "image": "assets/images/f2.png",
-      "title": "Meal Plan",
-      "subtitle": "Personalized workouts will help\nyou gain strength"
-    },
-    {
-      "name": "Breafast",
-      "image": "assets/images/f3.png",
-      "title": "Meal Plan",
-      "subtitle": "Personalized workouts will help\nyou gain strength"
-    },
-    {
-      "name": "Snack",
-      "image": "assets/images/f4.png",
-      "title": "Meal Plan",
-      "subtitle": "Personalized workouts will help\nyou gain strength"
-    },
-  ];
 
   @override
   Widget build(BuildContext context) {
@@ -135,9 +113,9 @@ class _MealPlanViewState extends State<MealPlanView> {
             child: ListView.builder(
                 padding:
                     const EdgeInsets.symmetric( horizontal: 20),
-                itemCount: planArr.length,
+                itemCount: mealPlanController.planArr.length,
                 itemBuilder: (context, index) {
-                  var wObj = planArr[index] as Map? ?? {};
+                  var wObj = mealPlanController.planArr[index];
                   return Container(
                     margin: const EdgeInsets.symmetric(vertical: 10),
                     height: media.width * 0.5,
@@ -148,7 +126,7 @@ class _MealPlanViewState extends State<MealPlanView> {
                     child: Stack(
                       children: [
                         Image.asset(
-                          wObj["image"].toString(),
+                          wObj.image,
                           width: media.width,
                           height: media.width * 0.5,
                           fit: BoxFit.cover,
@@ -169,21 +147,21 @@ class _MealPlanViewState extends State<MealPlanView> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                wObj["title"],
+                                wObj.title,
                                 style: TextStyle(
                                     color: AppColors.primary,
                                     fontSize: 14,
                                     fontWeight: FontWeight.w500),
                               ),
                               Text(
-                                wObj["name"],
+                                wObj.name,
                                 style: TextStyle(
                                     color: AppColors.white,
                                     fontSize: 20,
                                     fontWeight: FontWeight.w700),
                               ),
                               Text(
-                                wObj["subtitle"],
+                                wObj.subtitle,
                                 style: TextStyle(
                                     color: AppColors.white,
                                     fontSize: 14,

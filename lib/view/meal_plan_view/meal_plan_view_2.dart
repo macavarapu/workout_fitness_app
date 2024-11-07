@@ -4,7 +4,7 @@ import 'package:get/get_core/src/get_main.dart';
 import 'package:workout_fitness_app/common_widgets/tapbar_widget.dart';
 import 'package:workout_fitness_app/constants/app_color_constants.dart';
 import 'package:workout_fitness_app/controller/login_controller.dart';
-import 'package:workout_fitness_app/controller/meal_plan_controller.dart';
+import 'package:workout_fitness_app/controller/meal_plan_2_controller.dart';
 
 
 
@@ -17,7 +17,7 @@ class MealPlanView2 extends StatefulWidget {
 
 class _MealPlanView2State extends State<MealPlanView2> {
   int isActiveTab = 0;
-  final MealPlanController mealPlanController=Get.put(MealPlanController());
+  final MealPlanviewController mealPlanviewController=Get.put(MealPlanviewController());
 
   @override
   Widget build(BuildContext context) {
@@ -112,9 +112,9 @@ class _MealPlanView2State extends State<MealPlanView2> {
         Expanded(
           child: ListView.builder(
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 0),
-              itemCount:mealPlanController.meanplanArr.length,
+              itemCount:mealPlanviewController.meanplanArr.length,
               itemBuilder: (context, index) {
-                var wObj = mealPlanController.meanplanArr[index];
+                var wObj = mealPlanviewController.meanplanArr[index];
                 return Container(
                   padding: const EdgeInsets.symmetric(vertical: 8),
                   decoration: BoxDecoration(color: AppColors.white),

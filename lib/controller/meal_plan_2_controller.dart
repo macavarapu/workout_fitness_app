@@ -3,9 +3,9 @@ import 'package:get/get_state_manager/get_state_manager.dart';
 import 'package:workout_fitness_app/constants/image_constants.dart';
 import 'package:workout_fitness_app/constants/string_constants.dart';
 import 'package:workout_fitness_app/controller/login_controller.dart';
-import 'package:workout_fitness_app/view_model/meal_plan_view_model.dart';
+import 'package:workout_fitness_app/view_model/meal_plan_view_2_model.dart';
 
-class MealPlanController extends GetxService {
+class MealPlanviewController extends GetxService {
   var meanplanArr = <MealPlanViewModel>[].obs;
   @override
   void onInit() {

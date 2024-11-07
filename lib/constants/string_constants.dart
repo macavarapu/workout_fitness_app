@@ -63,6 +63,9 @@ class StringConstants {
         static const String vegetableSandwich="vegetable, Sandwich";
         static const String snack="Snack";
         static const String boatnutbutte="Boat, nut, butte";
+        static const String mealPla="Meal Plan";
+        static const String personalizedworkoutswillhelpnyougainstrengt="Personalized workouts will help\nyou gain strength";
+        static const String unlock="Unlock";
 
 
 }
