@@ -24,4 +24,5 @@ class RouteList {
    static const String runningview="/runningview";
    static const String tipsview="/tipsview";
    static const String tipsDetailView="/tipsDetailView";
-}
+    static  const  String SettingView="/SettingView";
+}  

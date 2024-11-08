@@ -15,6 +15,7 @@ import 'package:workout_fitness_app/view/menu_view/menu_view.dart';
 import 'package:workout_fitness_app/view/menu_view/yoga_view.dart';
 import 'package:workout_fitness_app/view/running_view/running_view.dart';
 import 'package:workout_fitness_app/view/schedule_view/schedule_view.dart';
+import 'package:workout_fitness_app/view/setting_view/setting_view.dart';
 import 'package:workout_fitness_app/view/tips_view/tips_detail_view.dart';
 import 'package:workout_fitness_app/view/tips_view/tips_view.dart';
 import 'package:workout_fitness_app/view/weight/weight_view.dart';
@@ -45,7 +46,7 @@ class Routes {
           RouteList.mealPlanview2:(context)=>MealPlanView2(),
           RouteList.runningview:(context)=>RunningView(),
           RouteList.tipsview:(context)=>TipsView(),
-          //RouteList.tipsDetailView:(context)=>TipsDetailView(tObj: tObj),
+          RouteList.SettingView:(context)=>SettingView(),
     };
   }
 }

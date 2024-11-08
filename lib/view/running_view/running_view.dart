@@ -8,6 +8,7 @@ import 'package:workout_fitness_app/common_widgets/running_tap_button_widget.dar
 import 'package:workout_fitness_app/constants/app_color_constants.dart';
 import 'package:workout_fitness_app/constants/image_constants.dart';
 import 'package:workout_fitness_app/constants/string_constants.dart';
+import 'package:workout_fitness_app/view/running_view/running_setting_view.dart';
 
 class RunningView extends StatefulWidget {
   const RunningView({super.key});
@@ -156,7 +157,13 @@ class _RunningViewState extends State<RunningView> {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 InkWell(
-                    onTap: () {},
+                    onTap: () {
+                       Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) =>
+                                  Runningsettingview()));
+                    },
                     child: Column(
                       children: [
                         Image.asset(
